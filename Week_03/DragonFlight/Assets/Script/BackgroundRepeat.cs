@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class BackgroundRepeat : MonoBehaviour
 {
-    // 스크롤할 속도를 상수로 지정
-    public float scrollSpeed = 1.2f;
+    // 스크롤할 속도를 지정
+    // 유니티 인스펙터에서 값을 수정했다면, 유니티 인스펙터에서 수정된 값이 유지 (코드에서 값을 초기화하거나 설정하는 부분이 없다면)
+    public float scrollSpeed = 0.5f;
 
     //쿼드의 Material 데이터를 받아올 객체 선언
     private Material thisMaterial;
