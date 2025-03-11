@@ -5,11 +5,6 @@ public class Bullet : MonoBehaviour
     public float moveSpeed = 0.45f;
     public GameObject explosion;
 
-    void Start()
-    {
-           
-    }
-
     void Update()
     {
         // Y축 이동
@@ -30,7 +25,7 @@ public class Bullet : MonoBehaviour
         // 총알과 적이 부딪힘
         // if(other.gameObject.tag == "Enemy") // 충돌한 object의 태그가 "Enemy" 일 때
         if (collision.gameObject.CompareTag("Enemy")) // CompareTag -> 좀 더 안정적으로 비교
-        {                                             
+        {
             // 폭팔 프리팹, 총알 포지션, 방향값 안줌
             Instantiate(explosion, transform.position, Quaternion.identity); // 폭팔 이펙트 생성
             SoundManager.instance.PlayDieSound(); // 죽음 사운드
@@ -46,7 +41,6 @@ public class Bullet : MonoBehaviour
     - 둘 중 하나는 Rigidbody2D를 가져야 충돌 감지 가능
 
     2. 충돌 이벤트 종류
-
     // IsTrigger가 체크되지 않은 상태
 
     // 다른 Collider2D와 충돌했을 때 (시작)

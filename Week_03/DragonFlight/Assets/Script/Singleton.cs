@@ -22,9 +22,4 @@ public class Singleton : MonoBehaviour
     {
         Debug.Log("싱글톤 메세지 출력!");
     }
-
-    void Update()
-    {
-        
-    }
 }

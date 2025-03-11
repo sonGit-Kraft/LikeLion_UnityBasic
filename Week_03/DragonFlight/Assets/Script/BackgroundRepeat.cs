@@ -19,9 +19,9 @@ public class BackgroundRepeat : MonoBehaviour
     void Update()
     {
         // 새롭게 지정해줄 Offset 객체 선언
-        Vector2 newoffset = thisMaterial.mainTextureOffset;
+        Vector2 newoffset = thisMaterial.mainTextureOffset; // 현재 재질에 적용된 텍스처의 오프셋(이동)을 나타내는 Vector2 값 저장
 
-        // 현재 Y값에 속도에 프레임 보정해서 더해줌
+        // 스크롤 속도에 프레임을 보정해서 현재 Y값에 더해줌
         newoffset.Set(0, newoffset.y + (scrollSpeed * Time.deltaTime));
 
         // 최종적으로 Offset 값을 지정

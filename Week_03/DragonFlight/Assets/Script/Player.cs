@@ -4,8 +4,7 @@ public class Player : MonoBehaviour
 {
     // 움직이는 속도 정의
     public float moveSpeed = 5.0f;
-    public GameObject playerhit;
-    public GameObject dieexplosion;
+    public GameObject playerHit;
 
     /*
     Update()
@@ -41,14 +40,12 @@ public class Player : MonoBehaviour
         // if(other.gameObject.tag == "Enemy") // 충돌한 object의 태그가 "Enemy" 일 때
         if (collision.gameObject.CompareTag("Enemy")) // CompareTag -> 좀 더 안정적으로 비교
         {
-            GameManager.instance.Hp(10); // Hp 감소
-            Debug.Log(GameManager.instance.hp);
-            Instantiate(playerhit, transform.position, Quaternion.identity); // 폭팔 이펙트 생성
-            if (GameManager.instance.hp == 0)
+            GameManager.instance.DecreaseHp(10); // Hp 감소
+            Instantiate(playerHit, transform.position, Quaternion.identity); // 히트 이펙트 생성
+
+            if (GameManager.instance.hp <= 0)
             {
-                // 폭팔 프리팹, 플레이어 포지션, 방향값 안줌
-                //Instantiate(dieexplosion, transform.position, Quaternion.identity); // 죽음 이펙트 생성
-                Destroy(gameObject, 2f); // 2초 후 플레이어 삭제
+                Destroy(gameObject, 0.5f); // 0.5초 후 플레이어 삭제
                 Invoke("QuitGame", 0.5f); // 0.5초 후 게임 종료
             }
         }

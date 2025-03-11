@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Launcher : MonoBehaviour
 {
-    public GameObject bullet; // 미사일 프리팹 가져올 변수
+    public GameObject bullet; // 총알 프리팹 가져올 변수
                               // GameObject: 모든 게임 오브젝트의 기본 클래스
     void Start()
     {
@@ -13,7 +13,7 @@ public class Launcher : MonoBehaviour
 
     void Shoot()
     {
-        // 미사일 프리팹, 런처 포지션, 방향값 안줌
+        // 총알 프리팹, 런처 포지션, 방향값 안줌
         // Instantiate()는 Unity에서 게임 오브젝트 또는 프리팹을 복제(인스턴스화) 하는 함수
         Instantiate(bullet, transform.position, Quaternion.identity);
 

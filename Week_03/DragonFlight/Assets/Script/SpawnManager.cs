@@ -9,7 +9,9 @@ public class SpawnManager : MonoBehaviour
     public GameObject enemy3;
 
     public GameObject currentEnemy; // 현재 스폰할 적
-    public float spawntime = 0.5f;
+
+    public float spawnTime = 0.5f; // 스폰 주기
+
     // 적을 생성하는 함수
     void SpawnEnemy()
     {
@@ -22,7 +24,7 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         // SpawnEnemy 1 0.5f
-        InvokeRepeating("SpawnEnemy", 1, spawntime);
+        InvokeRepeating("SpawnEnemy", 1, spawnTime);
     }
 
     void Update()
@@ -30,15 +32,23 @@ public class SpawnManager : MonoBehaviour
         // 일정 점수마다 적 변경
         if (GameManager.instance.score >= 50 && GameManager.instance.score < 100 && currentEnemy != enemy2)
         {
-            currentEnemy = enemy2;
-            Debug.Log("적이 enemy2로 변경됨!");
-            spawntime = 3f;
+            if (spawnTime != 0.75f)  // spawnTime이 실제로 변경될 때만
+            {
+                currentEnemy = enemy2;
+                spawnTime = 0.75f;
+                CancelInvoke("SpawnEnemy");  // 기존 호출 취소
+                InvokeRepeating("SpawnEnemy", 1, spawnTime);  // 새로운 주기로 호출
+            }
         }
         else if (GameManager.instance.score >= 100 && currentEnemy != enemy3)
         {
-            currentEnemy = enemy3;
-            Debug.Log("적이 enemy3로 변경됨!");
-            spawntime = 4f;
+            if (spawnTime != 1.0f)  // spawnTime이 실제로 변경될 때만
+            {
+                currentEnemy = enemy3;
+                spawnTime = 1.0f;
+                CancelInvoke("SpawnEnemy");  // 기존 호출 취소
+                InvokeRepeating("SpawnEnemy", 1, spawnTime);  // 새로운 주기로 호출
+            }
         }
     }
 }
