@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
 
     // 레이저
 
-
     void Start()
     {
         ani = GetComponent<Animator>(); // 애니메이터 컴포넌트 가져옴

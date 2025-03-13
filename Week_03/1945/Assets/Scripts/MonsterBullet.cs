@@ -2,12 +2,7 @@ using UnityEngine;
 
 public class MonsterBullet : MonoBehaviour
 {
-    public float Speed = 3.0f;
-    
-    void Start()
-    {
-        
-    }
+    public float Speed = 3f;
 
     void Update()
     {

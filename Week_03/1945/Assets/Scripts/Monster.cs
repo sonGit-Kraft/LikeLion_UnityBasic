@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
-    public float Speed = 3.0f;
-    public float Delay = 1.0f;
+    public float Speed = 3f;
+    public float Delay = 1f;
     public Transform ms1;
     public Transform ms2;
     public GameObject bullet;
