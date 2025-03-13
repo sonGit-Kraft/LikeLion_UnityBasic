@@ -12,6 +12,15 @@ public class Player : MonoBehaviour
     // 애니메이터를 가져올 변수
     Animator ani;
 
+    // 미사일
+    public GameObject bullet; // 추후 4개 배열로 만들 예정
+    public Transform pos = null;
+
+    // 아이템
+
+    // 레이저
+
+
     void Start()
     {
         ani = GetComponent<Animator>(); // 애니메이터 컴포넌트 가져옴
@@ -47,6 +56,13 @@ public class Player : MonoBehaviour
             ani.SetBool("up", true);
         else
             ani.SetBool("up", false);
+
+        // 스페이스바 -> 미사일 발사
+        if(Input.GetKeyDown(KeyCode.Space)) // 키를 한 번 눌렀을 때만 실행 (Input.GetKey: 키를 꾹 누르는 동안 실행)
+        {
+            // 프리팹, 위치, 방향
+            Instantiate(bullet, pos.position, Quaternion.identity);
+        }
 
         Vector3 newPosition = transform.position + new Vector3(moveX, moveY, 0);
 
