@@ -31,7 +31,23 @@ public class PlayerBullet : MonoBehaviour
             GameObject obj = Instantiate(effect, transform.position, Quaternion.identity);
             Destroy(obj, 1);// 1초 뒤에 지우기
 
-            Destroy(collision.gameObject); // 몬스터 삭제
+            // 몬스터 삭제
+            // 몬스터 클래스의 함수 호출
+            collision.gameObject.GetComponent<Monster>().Damage(1);
+
+            Destroy(gameObject); // 미사일 삭제
+        }
+
+        if (collision.CompareTag("Boss"))
+        {
+            // 이펙트 생성
+            GameObject obj = Instantiate(effect, transform.position, Quaternion.identity);
+            Destroy(obj, 1);// 1초 뒤에 지우기
+
+            // 몬스터 삭제
+            // 몬스터 클래스의 함수 호출
+            // collision.gameObject.GetComponent<Monster>().Damage(1);
+
             Destroy(gameObject); // 미사일 삭제
         }
     }

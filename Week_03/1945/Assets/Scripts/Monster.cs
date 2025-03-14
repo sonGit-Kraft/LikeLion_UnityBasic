@@ -9,6 +9,9 @@ public class Monster : MonoBehaviour
     public Transform ms2;
     public GameObject bullet;
 
+    // 아이템 가져오기
+    public GameObject Item = null;
+
     void Start()
     {
         // Invoke: 주로 델리게이트 또는 메서드를 호출할 때 사용
@@ -34,5 +37,18 @@ public class Monster : MonoBehaviour
     private void OnBecameInvisible()
     {
         Destroy(gameObject);
+    }
+
+    // 미사일에 따른 데미지 입는 함수
+    public void Damage(int attack)
+    {
+        ItemDrop();
+        Destroy(gameObject);
+    }    
+
+    public void ItemDrop()
+    {
+        // 아이템 생성
+        Instantiate(Item, transform.position, Quaternion.identity);
     }
 }

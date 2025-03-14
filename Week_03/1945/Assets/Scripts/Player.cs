@@ -13,10 +13,12 @@ public class Player : MonoBehaviour
     Animator ani;
 
     // 미사일
-    public GameObject bullet; // 추후 4개 배열로 만들 예정
+    public GameObject[] bullet; // 배열로 선언
     public Transform pos = null;
+    public int power = 0; // 불렛의 인덱스
 
-    // 아이템
+    [SerializeField] 
+    private GameObject powerup; // private이지만 inspector에서 사용 가능
 
     // 레이저
 
@@ -25,7 +27,7 @@ public class Player : MonoBehaviour
         ani = GetComponent<Animator>(); // 애니메이터 컴포넌트 가져옴
 
         Camera cam = Camera.main;
-        // Camera.main.ViewportToWorldPoint() : 카메라 뷰포트 좌표(0~1 범위)를 월드 좌표로 변환하는 함수
+        // Camera.main.ViewportToWorldPoint(): 카메라 뷰포트 좌표(0~1 범위)를 월드 좌표로 변환하는 함수
         Vector3 bottomLeft = cam.ViewportToWorldPoint(new Vector3(0, 0, 0)); // (0, 0, 0) → 화면의 왼쪽 아래 (bottom - left)
         Vector3 topRight = cam.ViewportToWorldPoint(new Vector3(1, 1, 0)); // (1, 1, 0) → 화면의 오른쪽 위 (top - right)
 
@@ -57,10 +59,10 @@ public class Player : MonoBehaviour
             ani.SetBool("up", false);
 
         // 스페이스바 -> 미사일 발사
-        if(Input.GetKeyDown(KeyCode.Space)) // 키를 한 번 눌렀을 때만 실행 (Input.GetKey: 키를 꾹 누르는 동안 실행)
+        if(Input.GetKeyDown(KeyCode.Space)) // 키를 한 번 눌렀을 때만 실행 (Input.GetKey(): 키를 꾹 누르는 동안 실행)
         {
             // 프리팹, 위치, 방향
-            Instantiate(bullet, pos.position, Quaternion.identity);
+            Instantiate(bullet[power], pos.position, Quaternion.identity);
         }
 
         Vector3 newPosition = transform.position + new Vector3(moveX, moveY, 0);
@@ -71,5 +73,25 @@ public class Player : MonoBehaviour
         newPosition.y = Mathf.Clamp(newPosition.y, minBounds.y, maxBounds.y);
 
         transform.position = newPosition;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Item"))
+        {
+            power += 1;
+            
+            if (power >= 3)
+                power = 3;
+            else
+            {
+                // 파워 업
+                GameObject go = Instantiate(powerup, transform.position, Quaternion.identity);
+                Destroy(go, 1);
+            }
+
+            // 아이템 먹은 처리
+            Destroy(collision.gameObject);
+        }
     }
 }
