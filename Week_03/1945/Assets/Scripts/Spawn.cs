@@ -9,9 +9,19 @@ public class Spawn : MonoBehaviour
     public float SpawnStop = 10; // 끝나는 시간
     public GameObject monster;
     public GameObject monster2;
+    public GameObject boss;
 
     bool Switch = true;
     bool Switch2 = true;
+
+    [SerializeField]
+    GameObject textBoosWarning;
+
+    private void Awake()
+    {
+        textBoosWarning.SetActive(false);
+        //PoolManager.Instance.CreatePool(monster, 10);
+    }
 
     void Start()
     {
@@ -30,8 +40,10 @@ public class Spawn : MonoBehaviour
             float x = Random.Range(ss, es);
             // x값은 랜덤 값 y값은 자기자신 값
             Vector2 r = new Vector2(x, transform.position.y);
-            //몬스터 생성
+            // 몬스터 생성
             Instantiate(monster, r, Quaternion.identity);
+            //GameObject enemy = PoolManager.Instance.Get(monster);
+            //enemy.transform.position = r;
         }
     }
 
@@ -58,7 +70,7 @@ public class Spawn : MonoBehaviour
         // 두번째 몬스터 코루틴
         StartCoroutine("RandomSpawn2");
 
-        Invoke("Stop2", 30); // 30초 뒤에 Stop() 함수 실행
+        Invoke("Stop2", 20 + SpawnStop); // 30초 뒤에 Stop() 함수 실행
     }
 
     void Stop2()
@@ -66,6 +78,10 @@ public class Spawn : MonoBehaviour
         Switch2 = false;
         StopCoroutine("RandomSpawn2");
 
-        // 보스 몬스터 코루틴
+        textBoosWarning.SetActive(true);
+
+        // 보스 몬스터
+        Vector3 pos = new Vector3(0, 2.97f, 0);
+        Instantiate(boss, pos, Quaternion.identity);
     }
 }

@@ -17,10 +17,12 @@ public class Player : MonoBehaviour
     public Transform pos = null;
     public int power = 0; // 불렛의 인덱스
 
-    [SerializeField] 
+    [SerializeField]
     private GameObject powerup; // private이지만 inspector에서 사용 가능
 
     // 레이저
+    public GameObject lazer; // 배열로 선언
+    public float gValue = 0;
 
     void Start()
     {
@@ -43,12 +45,12 @@ public class Player : MonoBehaviour
         float moveY = moveSpeed * Time.deltaTime * Input.GetAxis("Vertical"); // 상하 키
 
         // -1 ~ 0 ~ 1
-        if(Input.GetAxis("Horizontal") <= -0.25f) // 수평 방향 입력 값이 -0.25 이하일 때
+        if (Input.GetAxis("Horizontal") <= -0.25f) // 수평 방향 입력 값이 -0.25 이하일 때
             ani.SetBool("left", true);
         else
             ani.SetBool("left", false);
 
-        if(Input.GetAxis("Horizontal") >= 0.25f) // 수평 방향 입력 값이 0.25 이상일 때
+        if (Input.GetAxis("Horizontal") >= 0.25f) // 수평 방향 입력 값이 0.25 이상일 때
             ani.SetBool("right", true);
         else
             ani.SetBool("right", false);
@@ -59,10 +61,30 @@ public class Player : MonoBehaviour
             ani.SetBool("up", false);
 
         // 스페이스바 -> 미사일 발사
-        if(Input.GetKeyDown(KeyCode.Space)) // 키를 한 번 눌렀을 때만 실행 (Input.GetKey(): 키를 꾹 누르는 동안 실행)
+        if (Input.GetKeyDown(KeyCode.Space)) // 키를 한 번 눌렀을 때만 실행
         {
             // 프리팹, 위치, 방향
             Instantiate(bullet[power], pos.position, Quaternion.identity);
+        }
+        else if (Input.GetKey(KeyCode.Space)) // 키를 꾹 누르는 동안 실행
+        {
+            gValue += Time.deltaTime;
+
+            if (gValue >= 1)
+            {
+                GameObject go = Instantiate(lazer, pos.position, Quaternion.identity);
+                Destroy(go, 3);
+                gValue = 0;
+            }
+        }
+        else
+        {
+            gValue -= Time.deltaTime;
+
+            if (gValue <= 0)
+            {
+                gValue = 0;
+            }
         }
 
         Vector3 newPosition = transform.position + new Vector3(moveX, moveY, 0);
@@ -80,7 +102,7 @@ public class Player : MonoBehaviour
         if (collision.CompareTag("Item"))
         {
             power += 1;
-            
+
             if (power >= 3)
                 power = 3;
             else

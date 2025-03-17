@@ -5,7 +5,7 @@ public class PlayerBullet : MonoBehaviour
     // 스피드
     public float Speed = 4.0f;
     // 공격력
-
+    public int Attack = 10;
     // 이펙트
     public GameObject effect;
 
@@ -20,7 +20,7 @@ public class PlayerBullet : MonoBehaviour
     private void OnBecameInvisible()
     {
         // 자기 자신 지우기
-        Destroy(gameObject);
+        Destroy(gameObject);    
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -33,7 +33,8 @@ public class PlayerBullet : MonoBehaviour
 
             // 몬스터 삭제
             // 몬스터 클래스의 함수 호출
-            collision.gameObject.GetComponent<Monster>().Damage(1);
+            collision.gameObject.GetComponent<Monster>().Damage(Attack);
+            //PoolManager.Instance.Return(collision.gameObject);
 
             Destroy(gameObject); // 미사일 삭제
         }

@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Monster : MonoBehaviour
 {
+    public int Hp = 100;
     public float Speed = 3f;
     public float Delay = 1f;
     public Transform ms1;
@@ -37,13 +38,20 @@ public class Monster : MonoBehaviour
     private void OnBecameInvisible()
     {
         Destroy(gameObject);
+        //PoolManager.Instance.Return(gameObject);
     }
 
     // 미사일에 따른 데미지 입는 함수
     public void Damage(int attack)
     {
-        ItemDrop();
-        Destroy(gameObject);
+        Hp -= attack;
+
+        if(Hp <= 0)
+        {
+            ItemDrop();
+            Destroy(gameObject);
+            //PoolManager.Instance.Return(gameObject);
+        }
     }    
 
     public void ItemDrop()
