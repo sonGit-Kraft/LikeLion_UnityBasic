@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -23,6 +24,9 @@ public class Player : MonoBehaviour
     // 레이저
     public GameObject lazer; // 배열로 선언
     public float gValue = 0;
+
+    // 게이지 바
+    public Image Gage;
 
     void Start()
     {
@@ -69,22 +73,25 @@ public class Player : MonoBehaviour
         else if (Input.GetKey(KeyCode.Space)) // 키를 꾹 누르는 동안 실행
         {
             gValue += Time.deltaTime;
-
+            Gage.fillAmount = gValue;
             if (gValue >= 1)
             {
                 GameObject go = Instantiate(lazer, pos.position, Quaternion.identity);
                 Destroy(go, 3);
                 gValue = 0;
             }
+            Gage.fillAmount = gValue;
         }
         else
         {
             gValue -= Time.deltaTime;
-
+            
             if (gValue <= 0)
             {
                 gValue = 0;
             }
+
+            Gage.fillAmount = gValue;
         }
 
         Vector3 newPosition = transform.position + new Vector3(moveX, moveY, 0);
