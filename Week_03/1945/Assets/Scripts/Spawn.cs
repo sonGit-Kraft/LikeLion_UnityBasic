@@ -80,8 +80,20 @@ public class Spawn : MonoBehaviour
 
         textBoosWarning.SetActive(true);
 
+        StartCoroutine(Shake());
+
         // 보스 몬스터
         Vector3 pos = new Vector3(0, 2.97f, 0);
         Instantiate(boss, pos, Quaternion.identity);
+    }
+
+    IEnumerator Shake()
+    {
+        yield return new WaitForSeconds(0.2f);
+        CameraShake.instance.CameraShakeShow();
+        yield return new WaitForSeconds(0.2f);
+        CameraShake.instance.CameraShakeShow();
+        yield return new WaitForSeconds(0.2f);
+        CameraShake.instance.CameraShakeShow();
     }
 }
