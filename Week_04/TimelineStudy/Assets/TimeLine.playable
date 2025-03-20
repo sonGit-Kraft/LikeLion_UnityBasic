@@ -1283,8 +1283,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   template:
     color: {r: 0, g: 0, b: 0, a: 1}
-    fontSize: 30
-    text: "\uC54C\uAC70 \uC5C6\uB2E4 \uC560\uC1A1\uC774"
+    fontSize: 20
+    text: "\uC54C\uAC70 \uC5C6\uB2E4 \uC560\uC1A1\uC774... \uB098\uB294 \uC774\uACF3\uC744
+      \uC9C0\uB098\uAC00\uC57C\uD55C\uB2E4!"
 --- !u!114 &2325358055481741941
 MonoBehaviour:
   m_ObjectHideFlags: 1
