@@ -1,11 +1,21 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [Header("플레이어 속성")]
     public float speed = 5;
     public float jumpUp = 1;
+    public float power;
     public Vector3 direction;
     public GameObject slash;
+
+    // 그림자
+    public GameObject Shadow1;
+    List<GameObject> sh = new List<GameObject>();
+
+    // 히트 이펙트
+    public GameObject hit_lazer;
 
     bool bJump = false;
     Animator pAnimator;
@@ -29,21 +39,40 @@ public class Player : MonoBehaviour
             // left
             sp.flipX = true;
             pAnimator.SetBool("Run", true);
+
+            // ShadowFlip
+            for (int i = 0; i < sh.Count; i++)
+            {
+                sh[i].GetComponent<SpriteRenderer>().flipX = sp.flipX;
+            }
         }
         else if (direction.x > 0)
         {
             // right
             sp.flipX = false;
             pAnimator.SetBool("Run", true);
+
+            // ShadowFlip
+            for (int i = 0; i < sh.Count; i++)
+            {
+                sh[i].GetComponent<SpriteRenderer>().flipX = sp.flipX;
+            }
         }
-        else if(direction.x==0)
+        else if (direction.x == 0)
         {
             pAnimator.SetBool("Run", false);
+
+            for (int i = 0; i < sh.Count; i++)
+            {
+                Destroy(sh[i]); // 게임오브젝트 지우기
+                sh.RemoveAt(i); // 게임오브젝트 관리하는 리스트 지우기
+            }
         }
 
-        if(Input.GetMouseButtonDown(0)) // 0번 -> 왼쪽마우스
+        if (Input.GetMouseButtonDown(0)) // 0번 -> 왼쪽마우스
         {
             pAnimator.SetTrigger("Attack");
+            Instantiate(hit_lazer, transform.position, Quaternion.identity);
         }
     }
     private void FixedUpdate()
@@ -70,9 +99,9 @@ public class Player : MonoBehaviour
         KeyInput();
         Move();
 
-        if(Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W))
         {
-            if(pAnimator.GetBool("Jump") == false)
+            if (pAnimator.GetBool("Jump") == false)
             {
                 Jump();
                 pAnimator.SetBool("Jump", true);
@@ -93,7 +122,28 @@ public class Player : MonoBehaviour
 
     public void AttSlash()
     {
-        // 플레이어 오른쪽
-        Instantiate(slash, transform.position, Quaternion.identity);
+        if (sp.flipX == false) // 플레이어 오른쪽
+        {
+            pRig2D.AddForce(Vector2.right * power, ForceMode2D.Impulse);
+            GameObject go = Instantiate(slash, transform.position, Quaternion.identity);
+            go.GetComponent<SpriteRenderer>().flipX = sp.flipX;
+        }
+        else // 플레이어 왼쪽
+        {
+            pRig2D.AddForce(Vector2.left * power, ForceMode2D.Impulse);
+            GameObject go = Instantiate(slash, transform.position, Quaternion.identity);
+            go.GetComponent<SpriteRenderer>().flipX = sp.flipX;
+        }
+    }
+
+    // 그림자
+    public void RunShadow()
+    {
+        if (sh.Count < 6)
+        {
+            GameObject go = Instantiate(Shadow1, transform.position, Quaternion.identity);
+            go.GetComponent<Shadow>().TwSpeed = 10 - sh.Count;
+            sh.Add(go);
+        }
     }
 }
