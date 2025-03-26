@@ -22,7 +22,7 @@ public class Homing : MonoBehaviour
 
     void Update()
     {
-        /* 계속 쫒아 가기 (Upadate에 넣으면 방향이 실시간으로 바뀌기 때문에)
+        /* 계속 따라 가기 (Upadate에 넣으면 방향이 실시간으로 바뀌기 때문에)
         // A - B: A를 바라보는 벡터 (플레이어 - 미사일)
         dir = target.transform.position - transform.position;
         // 방향 벡터만 구하기 (단위 벡터)
