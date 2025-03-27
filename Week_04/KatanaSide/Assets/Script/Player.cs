@@ -3,229 +3,234 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [Header("플레이어 속성")]
-    public float speed = 5;
-    public float jumpUp = 1;
-    public float power = 5;
-    public Vector3 direction;
-    public GameObject slash;
+    [Header("Player Attributes")]
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float jumpUp = 1f;
+    [SerializeField] private float power = 5f;
+    [SerializeField] private GameObject slash;
 
-    // 그림자
-    public GameObject Shadow1;
-    List<GameObject> sh = new List<GameObject>();
+    [Header("Shadow Settings")]
+    [SerializeField] private GameObject shadowPrefab;
+    private List<GameObject> shadows = new List<GameObject>();
 
-    // 히트 이펙트
-    public GameObject hit_lazer;
+    [Header("Effects")]
+    [SerializeField] private GameObject hitLazer;
+    [SerializeField] private GameObject jumpDust;
+    [SerializeField] private GameObject wallDust;
 
-    bool bJump = false;
-    Animator pAnimator;
-    Rigidbody2D pRig2D;
-    SpriteRenderer sp;
+    [Header("Wall Interaction")]
+    [SerializeField] private Transform wallCheck;
+    [SerializeField] private float wallCheckDistance = 0.5f;
+    [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private float slidingSpeed = 0.5f;
+    [SerializeField] private float wallJumpPower = 5f;
 
-    public GameObject Jdust;
+    private bool isJumping = false;
+    private bool isWallJumping = false;
+    private bool isWall = false;
+    private float directionMultiplier = 1f;
 
-    // 벽 점프
-    public Transform wallChk;
-    public float wallchkDistance;
-    public LayerMask wLayer;
-    bool isWall;
-    public float slidingSpeed;
-    public float wallJumpPower;
-    public bool isWallJump;
-    float isRight = 1;
+    private Animator animator;
+    private Rigidbody2D rigidBody;
+    private SpriteRenderer spriteRenderer;
 
-    public GameObject wallDust;
+    private const float SHADOW_MAX_COUNT = 6;
+    private const float WALL_DUST_LIFETIME = 0.3f;
+
+    private Vector3 direction;
+
     void Start()
     {
-        pAnimator = GetComponent<Animator>();
-        pRig2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        rigidBody = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         direction = Vector2.zero;
-        sp = GetComponent<SpriteRenderer>();
-    }
-
-    void KeyInput()
-    {
-        direction.x = Input.GetAxisRaw("Horizontal"); // 왼쪽은 -1, 0, 1
-
-        if (direction.x < 0)
-        {
-            sp.flipX = true;
-            pAnimator.SetBool("Run", true);
-            isRight = -1;
-
-            // Shadow flip
-            for (int i = 0; i < sh.Count; i++)
-            {
-                sh[i].GetComponent<SpriteRenderer>().flipX = sp.flipX;
-            }
-        }
-        else if (direction.x > 0)
-        {
-            sp.flipX = false;
-            pAnimator.SetBool("Run", true);
-            isRight = 1;
-
-            // Shadow flip
-            for (int i = 0; i < sh.Count; i++)
-            {
-                sh[i].GetComponent<SpriteRenderer>().flipX = sp.flipX;
-            }
-        }
-        else if (direction.x == 0)
-        {
-            pAnimator.SetBool("Run", false);
-
-            for (int i = 0; i < sh.Count; i++)
-            {
-                Destroy(sh[i]);
-                sh.RemoveAt(i);
-            }
-        }
-
-        if (Input.GetMouseButtonDown(0)) // 0번: 왼쪽 마우스
-        {
-            pAnimator.SetTrigger("Attack");
-            Instantiate(hit_lazer, transform.position, Quaternion.identity);
-        }
     }
 
     void Update()
     {
-        if (!isWallJump)
+        if (!isWallJumping)
         {
-            KeyInput();
+            HandleInput();
             Move();
         }
 
-        // 벽인지 체크
-        isWall = Physics2D.Raycast(wallChk.position, Vector2.right * isRight, wallchkDistance, wLayer);
-        pAnimator.SetBool("Grab", isWall);
-
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            if (!pAnimator.GetBool("Jump"))
-            {
-                Jump();
-                pAnimator.SetBool("Jump", true);
-                JumpDust();
-            }
-        }
-
-        if (isWall)
-        {
-            isWallJump = false;
-            pRig2D.linearVelocity = new Vector2(pRig2D.linearVelocityX, pRig2D.linearVelocityY * slidingSpeed);
-
-            // 벽을 잡고 있는 상태에서 점프
-            if (Input.GetKeyDown(KeyCode.W))
-            {
-                isWallJump = true;
-                // 벽점프 먼지
-                GameObject go = Instantiate(wallDust, transform.position + new Vector3(0.8f * isRight, 0, 0), Quaternion.identity);
-                go.GetComponent<SpriteRenderer>().flipX = sp.flipX;
-                Destroy(go, 0.3f); // 0.3초 후 자동 삭제
-
-                Invoke("FreezeX", 0.3f);
-                pRig2D.linearVelocity = new Vector2(-isRight * wallJumpPower, 0.9f * wallJumpPower);
-
-                sp.flipX = !sp.flipX;
-                isRight = -isRight;
-            }
-        }
-    }
-
-    void FreezeX()
-    {
-        isWallJump = false;
+        CheckWallCollision();
+        HandleJumpInput();
     }
 
     private void FixedUpdate()
     {
-        Debug.DrawRay(pRig2D.position, Vector3.down, new Color(0, 1, 0));
+        HandleGroundCheck();
+    }
 
-        // 레이캐스트로 땅 체크
-        RaycastHit2D rayHit = Physics2D.Raycast(pRig2D.position, Vector2.down, 1, LayerMask.GetMask("Ground"));
+    private void HandleInput()
+    {
+        direction.x = Input.GetAxisRaw("Horizontal");
 
-        if (pRig2D.linearVelocityY < 0)
+        if (direction.x != 0)
         {
-            if(rayHit.collider != null)
-            {
-                if(rayHit.distance < 0.7f)
-                {
-                    pAnimator.SetBool("Jump", false);
-                }
-            }
-            else
-            {
-                // 떨어지고 있다
-                if(!isWall)
-                {
-                    // 그냥 떨어지는 중
-                    pAnimator.SetBool("Jump", true);
-                }
-                else
-                {
-                    // 벽타기
-                    pAnimator.SetBool("Grab", true);
-                }
-            }
+            HandleMovementAnimation();
+        }
+        else
+        {
+            StopRunning();
+        }
+
+        if (Input.GetMouseButtonDown(0)) // Left mouse button
+        {
+            PerformAttack();
         }
     }
 
-    public void Jump()
+    private void HandleMovementAnimation()
     {
-        pRig2D.linearVelocity = Vector2.zero;
-        pRig2D.AddForce(new Vector2(0, jumpUp), ForceMode2D.Impulse);
+        spriteRenderer.flipX = direction.x < 0;
+        animator.SetBool("Run", true);
+        directionMultiplier = direction.x < 0 ? -1 : 1;
+
+        FlipShadows(spriteRenderer.flipX);
     }
 
-    public void Move()
+    private void StopRunning()
+    {
+        animator.SetBool("Run", false);
+        ClearShadows();
+    }
+
+    private void PerformAttack()
+    {
+        animator.SetTrigger("Attack");
+        Instantiate(hitLazer, transform.position, Quaternion.identity);
+    }
+
+    private void Move()
     {
         transform.position += direction * speed * Time.deltaTime;
     }
 
-    public void AttSlash()
+    private void CheckWallCollision()
     {
-        GameObject go = Instantiate(slash, transform.position, Quaternion.identity);
-        go.GetComponent<SpriteRenderer>().flipX = sp.flipX;
+        // 벽 충돌 감지
+        isWall = Physics2D.Raycast(wallCheck.position, Vector2.right * directionMultiplier, wallCheckDistance, wallLayer);
+        animator.SetBool("Grab", isWall);
 
-        if (sp.flipX == false)
+        if (isWall)
         {
-            pRig2D.AddForce(Vector2.right * power, ForceMode2D.Impulse);
-        }
-        else
-        {
-            pRig2D.AddForce(Vector2.left * power, ForceMode2D.Impulse);
+            // 벽 슬라이딩 처리
+            rigidBody.velocity = new Vector2(rigidBody.velocity.x, rigidBody.velocity.y * slidingSpeed);
+
+            // 벽 점프 처리
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                PerformWallJump();
+            }
         }
     }
 
-    // 그림자 생성
+    private void PerformWallJump()
+    {
+        isWallJumping = true;
+
+        // 벽 먼지 효과 생성
+        GameObject dust = Instantiate(wallDust, transform.position + new Vector3(0.8f * directionMultiplier, 0, 0), Quaternion.identity);
+        dust.GetComponent<SpriteRenderer>().flipX = spriteRenderer.flipX;
+        Destroy(dust, WALL_DUST_LIFETIME);
+
+        // 벽 점프 실행
+        rigidBody.velocity = new Vector2(-directionMultiplier * wallJumpPower, 0.9f * wallJumpPower);
+
+        // 방향 전환
+        spriteRenderer.flipX = !spriteRenderer.flipX;
+        directionMultiplier = -directionMultiplier;
+
+        // 벽 점프 상태 초기화
+        Invoke(nameof(ResetWallJump), WALL_DUST_LIFETIME);
+    }
+
+    private void ResetWallJump()
+    {
+        isWallJumping = false;
+    }
+
+    private void HandleJumpInput()
+    {
+        if (Input.GetKeyDown(KeyCode.W) && !animator.GetBool("Jump"))
+        {
+            Jump();
+            animator.SetBool("Jump", true);
+            CreateJumpDust();
+        }
+    }
+
+    private void Jump()
+    {
+        rigidBody.velocity = Vector2.zero;
+        rigidBody.AddForce(new Vector2(0, jumpUp), ForceMode2D.Impulse);
+    }
+
+    private void HandleGroundCheck()
+    {
+        RaycastHit2D rayHit = Physics2D.Raycast(rigidBody.position, Vector2.down, 1f, LayerMask.GetMask("Ground"));
+
+        if (rigidBody.velocity.y < 0)
+        {
+            if (rayHit.collider != null && rayHit.distance < 0.7f)
+            {
+                animator.SetBool("Jump", false);
+            }
+            else
+            {
+                animator.SetBool("Jump", !isWall);
+                animator.SetBool("Grab", isWall);
+            }
+        }
+    }
+
+    private void CreateJumpDust()
+    {
+        GameObject dust = isWall ? wallDust : jumpDust;
+        Instantiate(dust, transform.position, Quaternion.identity);
+    }
+
+    private void FlipShadows(bool flipX)
+    {
+        foreach (var shadow in shadows)
+        {
+            shadow.GetComponent<SpriteRenderer>().flipX = flipX;
+        }
+    }
+
+    private void ClearShadows()
+    {
+        foreach (var shadow in shadows)
+        {
+            Destroy(shadow);
+        }
+        shadows.Clear();
+    }
+
     public void RunShadow()
     {
-        if (sh.Count < 6)
+        if (shadows.Count < SHADOW_MAX_COUNT)
         {
-            GameObject go = Instantiate(Shadow1, transform.position, Quaternion.identity);
-            go.GetComponent<Shadow>().TwSpeed = 10 - sh.Count;
-            sh.Add(go);
+            GameObject shadow = Instantiate(shadowPrefab, transform.position, Quaternion.identity);
+            shadow.GetComponent<Shadow>().TwSpeed = 10 - shadows.Count;
+            shadows.Add(shadow);
         }
     }
 
-    // 흙먼지 효과
     public void RandDust(GameObject dust)
     {
         Instantiate(dust, transform.position + new Vector3(-0.114f, -0.467f, 0), Quaternion.identity);
     }
 
-    // 점프 먼지
-    public void JumpDust()
+    public void AttSlash()
     {
-        if(!isWall)
-        {
-            Instantiate(Jdust, transform.position, Quaternion.identity);
-        }
-        else
-        {
-            // 벽먼지
-            Instantiate(wallDust, transform.position, Quaternion.identity);
-        }
+        GameObject slashInstance = Instantiate(slash, transform.position, Quaternion.identity);
+        slashInstance.GetComponent<SpriteRenderer>().flipX = spriteRenderer.flipX;
+
+        Vector2 force = spriteRenderer.flipX ? Vector2.left : Vector2.right;
+        rigidBody.AddForce(force * power, ForceMode2D.Impulse);
     }
 }

@@ -2316,20 +2316,18 @@ MonoBehaviour:
   speed: 5
   jumpUp: 15
   power: 0
-  direction: {x: 0, y: 0, z: 0}
   slash: {fileID: 8691470871905460604, guid: 6a24a8af39e86e0419b08303ced32569, type: 3}
-  Shadow1: {fileID: 4209660461746844776, guid: 090a92ba15f8b4f498c1d05b2a42dfc3, type: 3}
-  hit_lazer: {fileID: 6322969009961191058, guid: 2cca30c3e35956444b87979d7b2e0a12, type: 3}
-  Jdust: {fileID: 7731718284733409293, guid: 55274f217c7d5e74a93b38a4da12a295, type: 3}
-  wallChk: {fileID: 281229713}
-  wallchkDistance: 0.5
-  wLayer:
+  shadowPrefab: {fileID: 4209660461746844776, guid: 090a92ba15f8b4f498c1d05b2a42dfc3, type: 3}
+  hitLazer: {fileID: 6322969009961191058, guid: 2cca30c3e35956444b87979d7b2e0a12, type: 3}
+  jumpDust: {fileID: 7731718284733409293, guid: 55274f217c7d5e74a93b38a4da12a295, type: 3}
+  wallDust: {fileID: 1050140907295674641, guid: ee114186ad3cd7642bd0e2d8ee61b356, type: 3}
+  wallCheck: {fileID: 281229713}
+  wallCheckDistance: 0.5
+  wallLayer:
     serializedVersion: 2
     m_Bits: 8
   slidingSpeed: 0.8
   wallJumpPower: 10
-  isWallJump: 0
-  wallDust: {fileID: 1050140907295674641, guid: ee114186ad3cd7642bd0e2d8ee61b356, type: 3}
 --- !u!1 &1635882233
 GameObject:
   m_ObjectHideFlags: 0
