@@ -34,6 +34,7 @@ public class Player : MonoBehaviour
     public bool isWallJump;
     float isRight = 1;
 
+    public GameObject wallDust;
     void Start()
     {
         pAnimator = GetComponent<Animator>();
@@ -119,6 +120,11 @@ public class Player : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.W))
             {
                 isWallJump = true;
+                // 벽점프 먼지
+                GameObject go = Instantiate(wallDust, transform.position + new Vector3(0.8f * isRight, 0, 0), Quaternion.identity);
+                go.GetComponent<SpriteRenderer>().flipX = sp.flipX;
+                Destroy(go, 0.3f); // 0.3초 후 자동 삭제
+
                 Invoke("FreezeX", 0.3f);
                 pRig2D.linearVelocity = new Vector2(-isRight * wallJumpPower, 0.9f * wallJumpPower);
 
@@ -140,9 +146,29 @@ public class Player : MonoBehaviour
         // 레이캐스트로 땅 체크
         RaycastHit2D rayHit = Physics2D.Raycast(pRig2D.position, Vector2.down, 1, LayerMask.GetMask("Ground"));
 
-        if (pRig2D.linearVelocityY < 0 && rayHit.collider != null && rayHit.distance < 0.7f)
+        if (pRig2D.linearVelocityY < 0)
         {
-            pAnimator.SetBool("Jump", false);
+            if(rayHit.collider != null)
+            {
+                if(rayHit.distance < 0.7f)
+                {
+                    pAnimator.SetBool("Jump", false);
+                }
+            }
+            else
+            {
+                // 떨어지고 있다
+                if(!isWall)
+                {
+                    // 그냥 떨어지는 중
+                    pAnimator.SetBool("Jump", true);
+                }
+                else
+                {
+                    // 벽타기
+                    pAnimator.SetBool("Grab", true);
+                }
+            }
         }
     }
 
@@ -189,8 +215,17 @@ public class Player : MonoBehaviour
         Instantiate(dust, transform.position + new Vector3(-0.114f, -0.467f, 0), Quaternion.identity);
     }
 
+    // 점프 먼지
     public void JumpDust()
     {
-        Instantiate(Jdust, transform.position, Quaternion.identity);
+        if(!isWall)
+        {
+            Instantiate(Jdust, transform.position, Quaternion.identity);
+        }
+        else
+        {
+            // 벽먼지
+            Instantiate(wallDust, transform.position, Quaternion.identity);
+        }
     }
 }
