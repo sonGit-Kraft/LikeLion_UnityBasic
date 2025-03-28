@@ -18,6 +18,11 @@ public class EnemyMissile : MonoBehaviour
         direction = dir.normalized;
     }
 
+    public Vector2 GetDirection()
+    {
+        return direction;
+    }
+
     void Update()
     {
         transform.Translate(direction * speed * Time.deltaTime);

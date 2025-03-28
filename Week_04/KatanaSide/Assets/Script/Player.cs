@@ -25,14 +25,14 @@ public class Player : MonoBehaviour
     public GameObject Jdust; // 점프 먼지 효과
 
     // 벽 점프 관련 변수
-    public Transform wallChk; 
-    public float wallchkDistance; 
+    public Transform wallChk;
+    public float wallchkDistance;
     public LayerMask wLayer;
     bool isWall;
-    public float slidingSpeed; 
-    public float wallJumpPower; 
+    public float slidingSpeed;
+    public float wallJumpPower;
     public bool isWallJump;
-    float isRight = 1; 
+    float isRight = 1;
 
     public GameObject walldust; // 벽 점프 먼지 효과
 
@@ -116,27 +116,32 @@ public class Player : MonoBehaviour
         isWallJump = false;
     }
 
+    private const float GROUND_CHECK_DISTANCE = 0.7f;
+
     private void FixedUpdate()
     {
-        Debug.DrawRay(pRig2D.position, Vector3.down, new Color(0, 1, 0));
+        Debug.DrawRay(pRig2D.position, Vector3.down, new Color(0, GROUND_CHECK_DISTANCE, 0));
 
         // 땅 체크
-        RaycastHit2D rayHit = Physics2D.Raycast(pRig2D.position, Vector3.down, 1, LayerMask.GetMask("Ground"));
+        RaycastHit2D rayHit = Physics2D.Raycast(pRig2D.position, Vector3.down, GROUND_CHECK_DISTANCE, LayerMask.GetMask("Ground"));
 
-        if (pRig2D.linearVelocityY < 0)
+        CheckGroundedState(rayHit);
+    }
+
+    void CheckGroundedState(RaycastHit2D rayHit)
+    {
+        bool isGrounded = rayHit.collider != null && rayHit.distance < GROUND_CHECK_DISTANCE;
+
+        if (isGrounded)
         {
-            if (rayHit.collider != null && rayHit.distance < 0.7f)
-            {
-                pAnimator.SetBool("Jump", false);
-            }
-            else if (!isWall)
-            {
+            pAnimator.SetBool("Jump", false);
+        }
+        else
+        {
+            if (!isWall)
                 pAnimator.SetBool("Jump", true);
-            }
             else
-            {
                 pAnimator.SetBool("Grab", true);
-            }
         }
     }
 
