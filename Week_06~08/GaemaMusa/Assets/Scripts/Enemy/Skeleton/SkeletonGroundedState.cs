@@ -14,7 +14,7 @@ public class SkeletonGroundedState : EnemyState
     public override void Enter()
     {
         base.Enter();
-        player = GameObject.FindGameObjectWithTag("Player").transform; // FindGameObjectWithTag가 Find보다 빠름
+        player = PlayerManager.instance.player.transform;
     }
     public override void Update()
     {

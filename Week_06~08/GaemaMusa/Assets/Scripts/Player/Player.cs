@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Player : Entity
@@ -12,11 +13,11 @@ public class Player : Entity
     public float jumpForce;
 
     [Header("Dash Info")]
-    [SerializeField] private float dashCooldown;
-    private float dashUsageTimer;
     public float dashSpeed;
     public float dashDuration;
     public float dashDir { get; private set; }
+
+    public SkillManager skill { get; private set; }
 
     public bool isBusy { get; private set; }
 
@@ -31,6 +32,8 @@ public class Player : Entity
     public PlayerWallJumpState WallJumpState { get; private set; }
     public PlayerPrimaryAttack primaryattackState { get; private set; }
     public PlayerCounterAttackState counterattackState { get; private set; }
+    public PlayerAimSwordState aimswordState { get; private set; }
+    public PlayerCatchSwordState catchswordState { get; private set; }
     #endregion
 
     protected override void Awake()
@@ -47,11 +50,16 @@ public class Player : Entity
         WallJumpState = new PlayerWallJumpState(this, stateMachine, "Jump");
         primaryattackState = new PlayerPrimaryAttack(this, stateMachine, "Attack");
         counterattackState = new PlayerCounterAttackState(this, stateMachine, "CounterAttack");
+        aimswordState = new PlayerAimSwordState(this, stateMachine, "AimSword");
+        catchswordState = new PlayerCatchSwordState(this, stateMachine, "CatchSword");
     }
 
     protected override void Start()
     {
         base.Start();
+
+        skill = SkillManager.instance;
+
         stateMachine.Initialize(idleState);
     }
 
@@ -77,11 +85,8 @@ public class Player : Entity
         if (IsWallDetected())
             return;
 
-        dashUsageTimer -= Time.deltaTime;
-
-        if (Input.GetKeyDown(KeyCode.LeftShift) && dashUsageTimer < 0)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && SkillManager.instance.dash.CanUseSkill())
         {
-            dashUsageTimer = dashCooldown;
             dashDir = Input.GetAxisRaw("Horizontal");
 
             if (dashDir == 0)
