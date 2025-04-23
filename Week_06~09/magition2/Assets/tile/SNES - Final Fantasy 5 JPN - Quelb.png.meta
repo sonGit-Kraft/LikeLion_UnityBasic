@@ -1,0 +1,1989 @@
+fileFormatVersion: 2
+guid: a7a55cf99eea5c643b52f2840fac3e7c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5246362839122262752
+    second: SNES - Final Fantasy 5 JPN - Quelb_0
+  - first:
+      213: 6347581359817960392
+    second: SNES - Final Fantasy 5 JPN - Quelb_1
+  - first:
+      213: 7803103325593114776
+    second: SNES - Final Fantasy 5 JPN - Quelb_2
+  - first:
+      213: -8696060525234081765
+    second: SNES - Final Fantasy 5 JPN - Quelb_3
+  - first:
+      213: 5770323056122121314
+    second: SNES - Final Fantasy 5 JPN - Quelb_4
+  - first:
+      213: 5042930044764535026
+    second: SNES - Final Fantasy 5 JPN - Quelb_5
+  - first:
+      213: 3719413377245773922
+    second: SNES - Final Fantasy 5 JPN - Quelb_6
+  - first:
+      213: -8290224339333804741
+    second: SNES - Final Fantasy 5 JPN - Quelb_7
+  - first:
+      213: -2713007730067237587
+    second: SNES - Final Fantasy 5 JPN - Quelb_8
+  - first:
+      213: -5660416148026992728
+    second: SNES - Final Fantasy 5 JPN - Quelb_9
+  - first:
+      213: -4432349989869881447
+    second: SNES - Final Fantasy 5 JPN - Quelb_10
+  - first:
+      213: -757662879277054045
+    second: SNES - Final Fantasy 5 JPN - Quelb_11
+  - first:
+      213: 480748912638201702
+    second: SNES - Final Fantasy 5 JPN - Quelb_12
+  - first:
+      213: -9152106355353992892
+    second: SNES - Final Fantasy 5 JPN - Quelb_13
+  - first:
+      213: 4170729557012252274
+    second: SNES - Final Fantasy 5 JPN - Quelb_14
+  - first:
+      213: 8970345250930979292
+    second: SNES - Final Fantasy 5 JPN - Quelb_15
+  - first:
+      213: -2596209654989793278
+    second: SNES - Final Fantasy 5 JPN - Quelb_16
+  - first:
+      213: 8375380139985498788
+    second: SNES - Final Fantasy 5 JPN - Quelb_17
+  - first:
+      213: -4116895834999848571
+    second: SNES - Final Fantasy 5 JPN - Quelb_18
+  - first:
+      213: -722917267319152844
+    second: SNES - Final Fantasy 5 JPN - Quelb_19
+  - first:
+      213: 3654472679993077639
+    second: SNES - Final Fantasy 5 JPN - Quelb_20
+  - first:
+      213: -3709899754630690936
+    second: SNES - Final Fantasy 5 JPN - Quelb_21
+  - first:
+      213: -6440773368466958027
+    second: SNES - Final Fantasy 5 JPN - Quelb_22
+  - first:
+      213: 8511816594342229850
+    second: SNES - Final Fantasy 5 JPN - Quelb_23
+  - first:
+      213: 3580748673602545221
+    second: SNES - Final Fantasy 5 JPN - Quelb_24
+  - first:
+      213: -164444965472940285
+    second: SNES - Final Fantasy 5 JPN - Quelb_25
+  - first:
+      213: 3005602148618051571
+    second: SNES - Final Fantasy 5 JPN - Quelb_26
+  - first:
+      213: 9136553979885934981
+    second: SNES - Final Fantasy 5 JPN - Quelb_27
+  - first:
+      213: 8469237608113327677
+    second: SNES - Final Fantasy 5 JPN - Quelb_28
+  - first:
+      213: 4038175088274194171
+    second: SNES - Final Fantasy 5 JPN - Quelb_29
+  - first:
+      213: 2569425492996933953
+    second: SNES - Final Fantasy 5 JPN - Quelb_30
+  - first:
+      213: 1258447519185378267
+    second: SNES - Final Fantasy 5 JPN - Quelb_31
+  - first:
+      213: 9018873706711454647
+    second: SNES - Final Fantasy 5 JPN - Quelb_32
+  - first:
+      213: -5562981844227234787
+    second: SNES - Final Fantasy 5 JPN - Quelb_33
+  - first:
+      213: 4339187870344782971
+    second: SNES - Final Fantasy 5 JPN - Quelb_34
+  - first:
+      213: -3092477301856887414
+    second: SNES - Final Fantasy 5 JPN - Quelb_35
+  - first:
+      213: -2575562536516796457
+    second: SNES - Final Fantasy 5 JPN - Quelb_36
+  - first:
+      213: -1156718763925409021
+    second: SNES - Final Fantasy 5 JPN - Quelb_37
+  - first:
+      213: 9028204239647887466
+    second: SNES - Final Fantasy 5 JPN - Quelb_38
+  - first:
+      213: -6564972080339730737
+    second: SNES - Final Fantasy 5 JPN - Quelb_39
+  - first:
+      213: -6515356067976116071
+    second: SNES - Final Fantasy 5 JPN - Quelb_40
+  - first:
+      213: -6102853829543360708
+    second: SNES - Final Fantasy 5 JPN - Quelb_41
+  - first:
+      213: -3250793697940133042
+    second: SNES - Final Fantasy 5 JPN - Quelb_42
+  - first:
+      213: -1779073660590252354
+    second: SNES - Final Fantasy 5 JPN - Quelb_43
+  - first:
+      213: -7519901184799446857
+    second: SNES - Final Fantasy 5 JPN - Quelb_44
+  - first:
+      213: 7040484456329831827
+    second: SNES - Final Fantasy 5 JPN - Quelb_45
+  - first:
+      213: -2856714763263206702
+    second: SNES - Final Fantasy 5 JPN - Quelb_46
+  - first:
+      213: 7186201475151790552
+    second: SNES - Final Fantasy 5 JPN - Quelb_47
+  - first:
+      213: 4236202922641322852
+    second: SNES - Final Fantasy 5 JPN - Quelb_48
+  - first:
+      213: -8645826169574312671
+    second: SNES - Final Fantasy 5 JPN - Quelb_49
+  - first:
+      213: -651766292666996210
+    second: SNES - Final Fantasy 5 JPN - Quelb_50
+  - first:
+      213: -1679488660620425503
+    second: SNES - Final Fantasy 5 JPN - Quelb_51
+  - first:
+      213: 6475504855837768126
+    second: SNES - Final Fantasy 5 JPN - Quelb_52
+  - first:
+      213: 730930403209457280
+    second: SNES - Final Fantasy 5 JPN - Quelb_53
+  - first:
+      213: -2577981478050815080
+    second: SNES - Final Fantasy 5 JPN - Quelb_54
+  - first:
+      213: -9016497020225380627
+    second: SNES - Final Fantasy 5 JPN - Quelb_55
+  - first:
+      213: 1174691614842275933
+    second: SNES - Final Fantasy 5 JPN - Quelb_56
+  - first:
+      213: 8656246211395209211
+    second: SNES - Final Fantasy 5 JPN - Quelb_57
+  - first:
+      213: -526556420485176757
+    second: SNES - Final Fantasy 5 JPN - Quelb_58
+  - first:
+      213: 7143333936685184408
+    second: SNES - Final Fantasy 5 JPN - Quelb_59
+  - first:
+      213: 6490458415567408786
+    second: SNES - Final Fantasy 5 JPN - Quelb_60
+  - first:
+      213: -8239189945790585195
+    second: SNES - Final Fantasy 5 JPN - Quelb_61
+  - first:
+      213: 3141796042925237310
+    second: SNES - Final Fantasy 5 JPN - Quelb_62
+  - first:
+      213: 2767033180131541679
+    second: SNES - Final Fantasy 5 JPN - Quelb_63
+  - first:
+      213: 4785780479147824937
+    second: SNES - Final Fantasy 5 JPN - Quelb_64
+  - first:
+      213: -4190009599236584784
+    second: SNES - Final Fantasy 5 JPN - Quelb_65
+  - first:
+      213: 2012616445327426706
+    second: SNES - Final Fantasy 5 JPN - Quelb_66
+  - first:
+      213: -1093699506609919058
+    second: SNES - Final Fantasy 5 JPN - Quelb_67
+  - first:
+      213: -2398193579558150687
+    second: SNES - Final Fantasy 5 JPN - Quelb_68
+  - first:
+      213: -7525861091632943326
+    second: SNES - Final Fantasy 5 JPN - Quelb_69
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 296
+        width: 624
+        height: 622
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025ce435bcc2137b0800000000000000
+      internalID: -5246362839122262752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_1
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 846
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb27d6ad93271850800000000000000
+      internalID: 6347581359817960392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_2
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 846
+        width: 48
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89895abc1213a4c60800000000000000
+      internalID: 7803103325593114776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_3
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 616
+        width: 400
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b103028a603615780800000000000000
+      internalID: -8696060525234081765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_4
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 832
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26cc76f3f3e441050800000000000000
+      internalID: 5770323056122121314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_5
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 832
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8b55938261cf540800000000000000
+      internalID: 5042930044764535026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_6
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 832
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2600293a2c20e9330800000000000000
+      internalID: 3719413377245773922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_7
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 832
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d06b903e433fc80800000000000000
+      internalID: -8290224339333804741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_8
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 802
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d251478f7d5795ad0800000000000000
+      internalID: -2713007730067237587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_9
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 802
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a757f7e0892271b0800000000000000
+      internalID: -5660416148026992728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_10
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 367
+        width: 279
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9977995fa212d72c0800000000000000
+      internalID: -4432349989869881447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_11
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 577
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7013520ad3c75f0800000000000000
+      internalID: -757662879277054045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_12
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 577
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f84f3c696fba600800000000000000
+      internalID: 480748912638201702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_13
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 575
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441c78e72cf2df080800000000000000
+      internalID: -9152106355353992892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_14
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 577
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27600f34f6861e930800000000000000
+      internalID: 4170729557012252274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_15
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 577
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd17a529a711d7c70800000000000000
+      internalID: 8970345250930979292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_16
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 577
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208d4e7f21968fbd0800000000000000
+      internalID: -2596209654989793278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_17
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 577
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a272b6dcd35b3470800000000000000
+      internalID: 8375380139985498788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_18
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 577
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5818c81ec09ddd6c0800000000000000
+      internalID: -4116895834999848571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_19
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 577
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f1277539ea7f5f0800000000000000
+      internalID: -722917267319152844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_20
+      rect:
+        serializedVersion: 2
+        x: 1093
+        y: 577
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f6b5c4a8b47b230800000000000000
+      internalID: 3654472679993077639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_21
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 338
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887cdec34d9c38cc0800000000000000
+      internalID: -3709899754630690936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_22
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 340
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5391bbdfeb6cd96a0800000000000000
+      internalID: -6440773368466958027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_23
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 340
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a573b03581c002670800000000000000
+      internalID: 8511816594342229850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_24
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 340
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 546e70072ff51b130800000000000000
+      internalID: 3580748673602545221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_25
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 340
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f42e7dc26c7bdf0800000000000000
+      internalID: -164444965472940285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_26
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 340
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff9784da3b06b920800000000000000
+      internalID: 3005602148618051571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_27
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 338
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589584aef6f8bce70800000000000000
+      internalID: 9136553979885934981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_28
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 340
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e49fd8bb6c88570800000000000000
+      internalID: 8469237608113327677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_29
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 340
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfe3a6df8da7a0830800000000000000
+      internalID: 4038175088274194171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_30
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 340
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1494aea5fde68a320800000000000000
+      internalID: 2569425492996933953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_31
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 340
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb1485e957e67110800000000000000
+      internalID: 1258447519185378267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_32
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 340
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b395aa2ad9792d70800000000000000
+      internalID: 9018873706711454647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_33
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 338
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1463e29c715cc2b0800000000000000
+      internalID: -5562981844227234787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_34
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 340
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74a599c064e73c30800000000000000
+      internalID: 4339187870344782971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_35
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 340
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d9cd257405515d0800000000000000
+      internalID: -3092477301856887414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_36
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 340
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfbc1ad483c14cd0800000000000000
+      internalID: -2575562536516796457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_37
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 340
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303723ba96282ffe0800000000000000
+      internalID: -1156718763925409021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_38
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 340
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6053e72cef9a4d70800000000000000
+      internalID: 9028204239647887466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_39
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 338
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce3ef6fca884e4a0800000000000000
+      internalID: -6564972080339730737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_40
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 340
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998091f0d2ec495a0800000000000000
+      internalID: -6515356067976116071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_41
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 340
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c378fedb6ce4e4ba0800000000000000
+      internalID: -6102853829543360708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_42
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 51
+        width: 240
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b233cea5cd2e2d0800000000000000
+      internalID: -3250793697940133042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_43
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 178
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebe934f7ee57f47e0800000000000000
+      internalID: -1779073660590252354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_44
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 178
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b86dfde6b1f3a790800000000000000
+      internalID: -7519901184799446857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_45
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 178
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 395e23a9f43d4b160800000000000000
+      internalID: 7040484456329831827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_46
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 176
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da151fee09ea58d0800000000000000
+      internalID: -2856714763263206702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_47
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 178
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d18fc2ea248ab360800000000000000
+      internalID: 7186201475151790552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_48
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 178
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463f1802d140aca30800000000000000
+      internalID: 4236202922641322852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_49
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 2
+        width: 224
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1253fb408ead30880800000000000000
+      internalID: -8645826169574312671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_50
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 178
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0aa201920674f6f0800000000000000
+      internalID: -651766292666996210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_51
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 177
+        width: 4
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e64c6326f141b8e0800000000000000
+      internalID: -1679488660620425503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_52
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 178
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9f6819b5d9dd950800000000000000
+      internalID: 6475504855837768126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_53
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 178
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08e25de3459c42a00800000000000000
+      internalID: 730930403209457280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_54
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 178
+        width: 9
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 893ae33218b293cd0800000000000000
+      internalID: -2577981478050815080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_55
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 182
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee19174bb7fed280800000000000000
+      internalID: -9016497020225380627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_56
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 3
+        width: 272
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d58cd47ccc75d4010800000000000000
+      internalID: 1174691614842275933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_57
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 182
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf74886011a212870800000000000000
+      internalID: 8656246211395209211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_58
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 166
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b42a7c2b9bb41b8f0800000000000000
+      internalID: -526556420485176757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_59
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 166
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895fc105e58322360800000000000000
+      internalID: 7143333936685184408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_60
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 166
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e07518a8db21a50800000000000000
+      internalID: 6490458415567408786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_61
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 164
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596ae2cb56488ad80800000000000000
+      internalID: -8239189945790585195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_62
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 37
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e346947ead6e99b20800000000000000
+      internalID: 3141796042925237310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_63
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 37
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2c577540a766620800000000000000
+      internalID: 2767033180131541679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_64
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 35
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 927da985df18a6240800000000000000
+      internalID: 4785780479147824937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_65
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 37
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bac60818781ad5c0800000000000000
+      internalID: -4190009599236584784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_66
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 37
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294c9d46eff3eeb10800000000000000
+      internalID: 2012616445327426706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_67
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 37
+        width: 4
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabee79e71662d0f0800000000000000
+      internalID: -1093699506609919058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_68
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 37
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed50d345a7e7bed0800000000000000
+      internalID: -2398193579558150687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SNES - Final Fantasy 5 JPN - Quelb_69
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 35
+        width: 4
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22fe84cf535ce8790800000000000000
+      internalID: -7525861091632943326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SNES - Final Fantasy 5 JPN - Quelb_0: -5246362839122262752
+      SNES - Final Fantasy 5 JPN - Quelb_1: 6347581359817960392
+      SNES - Final Fantasy 5 JPN - Quelb_10: -4432349989869881447
+      SNES - Final Fantasy 5 JPN - Quelb_11: -757662879277054045
+      SNES - Final Fantasy 5 JPN - Quelb_12: 480748912638201702
+      SNES - Final Fantasy 5 JPN - Quelb_13: -9152106355353992892
+      SNES - Final Fantasy 5 JPN - Quelb_14: 4170729557012252274
+      SNES - Final Fantasy 5 JPN - Quelb_15: 8970345250930979292
+      SNES - Final Fantasy 5 JPN - Quelb_16: -2596209654989793278
+      SNES - Final Fantasy 5 JPN - Quelb_17: 8375380139985498788
+      SNES - Final Fantasy 5 JPN - Quelb_18: -4116895834999848571
+      SNES - Final Fantasy 5 JPN - Quelb_19: -722917267319152844
+      SNES - Final Fantasy 5 JPN - Quelb_2: 7803103325593114776
+      SNES - Final Fantasy 5 JPN - Quelb_20: 3654472679993077639
+      SNES - Final Fantasy 5 JPN - Quelb_21: -3709899754630690936
+      SNES - Final Fantasy 5 JPN - Quelb_22: -6440773368466958027
+      SNES - Final Fantasy 5 JPN - Quelb_23: 8511816594342229850
+      SNES - Final Fantasy 5 JPN - Quelb_24: 3580748673602545221
+      SNES - Final Fantasy 5 JPN - Quelb_25: -164444965472940285
+      SNES - Final Fantasy 5 JPN - Quelb_26: 3005602148618051571
+      SNES - Final Fantasy 5 JPN - Quelb_27: 9136553979885934981
+      SNES - Final Fantasy 5 JPN - Quelb_28: 8469237608113327677
+      SNES - Final Fantasy 5 JPN - Quelb_29: 4038175088274194171
+      SNES - Final Fantasy 5 JPN - Quelb_3: -8696060525234081765
+      SNES - Final Fantasy 5 JPN - Quelb_30: 2569425492996933953
+      SNES - Final Fantasy 5 JPN - Quelb_31: 1258447519185378267
+      SNES - Final Fantasy 5 JPN - Quelb_32: 9018873706711454647
+      SNES - Final Fantasy 5 JPN - Quelb_33: -5562981844227234787
+      SNES - Final Fantasy 5 JPN - Quelb_34: 4339187870344782971
+      SNES - Final Fantasy 5 JPN - Quelb_35: -3092477301856887414
+      SNES - Final Fantasy 5 JPN - Quelb_36: -2575562536516796457
+      SNES - Final Fantasy 5 JPN - Quelb_37: -1156718763925409021
+      SNES - Final Fantasy 5 JPN - Quelb_38: 9028204239647887466
+      SNES - Final Fantasy 5 JPN - Quelb_39: -6564972080339730737
+      SNES - Final Fantasy 5 JPN - Quelb_4: 5770323056122121314
+      SNES - Final Fantasy 5 JPN - Quelb_40: -6515356067976116071
+      SNES - Final Fantasy 5 JPN - Quelb_41: -6102853829543360708
+      SNES - Final Fantasy 5 JPN - Quelb_42: -3250793697940133042
+      SNES - Final Fantasy 5 JPN - Quelb_43: -1779073660590252354
+      SNES - Final Fantasy 5 JPN - Quelb_44: -7519901184799446857
+      SNES - Final Fantasy 5 JPN - Quelb_45: 7040484456329831827
+      SNES - Final Fantasy 5 JPN - Quelb_46: -2856714763263206702
+      SNES - Final Fantasy 5 JPN - Quelb_47: 7186201475151790552
+      SNES - Final Fantasy 5 JPN - Quelb_48: 4236202922641322852
+      SNES - Final Fantasy 5 JPN - Quelb_49: -8645826169574312671
+      SNES - Final Fantasy 5 JPN - Quelb_5: 5042930044764535026
+      SNES - Final Fantasy 5 JPN - Quelb_50: -651766292666996210
+      SNES - Final Fantasy 5 JPN - Quelb_51: -1679488660620425503
+      SNES - Final Fantasy 5 JPN - Quelb_52: 6475504855837768126
+      SNES - Final Fantasy 5 JPN - Quelb_53: 730930403209457280
+      SNES - Final Fantasy 5 JPN - Quelb_54: -2577981478050815080
+      SNES - Final Fantasy 5 JPN - Quelb_55: -9016497020225380627
+      SNES - Final Fantasy 5 JPN - Quelb_56: 1174691614842275933
+      SNES - Final Fantasy 5 JPN - Quelb_57: 8656246211395209211
+      SNES - Final Fantasy 5 JPN - Quelb_58: -526556420485176757
+      SNES - Final Fantasy 5 JPN - Quelb_59: 7143333936685184408
+      SNES - Final Fantasy 5 JPN - Quelb_6: 3719413377245773922
+      SNES - Final Fantasy 5 JPN - Quelb_60: 6490458415567408786
+      SNES - Final Fantasy 5 JPN - Quelb_61: -8239189945790585195
+      SNES - Final Fantasy 5 JPN - Quelb_62: 3141796042925237310
+      SNES - Final Fantasy 5 JPN - Quelb_63: 2767033180131541679
+      SNES - Final Fantasy 5 JPN - Quelb_64: 4785780479147824937
+      SNES - Final Fantasy 5 JPN - Quelb_65: -4190009599236584784
+      SNES - Final Fantasy 5 JPN - Quelb_66: 2012616445327426706
+      SNES - Final Fantasy 5 JPN - Quelb_67: -1093699506609919058
+      SNES - Final Fantasy 5 JPN - Quelb_68: -2398193579558150687
+      SNES - Final Fantasy 5 JPN - Quelb_69: -7525861091632943326
+      SNES - Final Fantasy 5 JPN - Quelb_7: -8290224339333804741
+      SNES - Final Fantasy 5 JPN - Quelb_8: -2713007730067237587
+      SNES - Final Fantasy 5 JPN - Quelb_9: -5660416148026992728
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
