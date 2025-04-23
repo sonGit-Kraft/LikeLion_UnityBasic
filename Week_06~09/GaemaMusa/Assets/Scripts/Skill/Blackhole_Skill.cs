@@ -22,7 +22,7 @@ public class Blackhole_Skill : Skill
     public override void UseSkill()
     {
         base.UseSkill();
-        Debug.Log("!!!!!!!!!!!!!!!");
+
         GameObject newBlackHole = Instantiate(blackHolePrefab, player.transform.position, Quaternion.identity);
 
         currentBlackhole = newBlackHole.GetComponent<Blackhole_Skill_Controller>();
@@ -52,5 +52,10 @@ public class Blackhole_Skill : Skill
         }
 
         return false;
+    }
+
+    public float GetBlackholeRadius()
+    {
+        return maxSize / 2;
     }
 }

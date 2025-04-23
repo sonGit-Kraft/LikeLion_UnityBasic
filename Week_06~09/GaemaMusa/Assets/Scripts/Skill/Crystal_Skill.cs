@@ -9,6 +9,8 @@ public class Crystal_Skill : Skill
     [SerializeField] private GameObject crystalPrefab;
     private GameObject currentCrystal;
 
+    [SerializeField] private bool cloneInsteadOfCrystal;
+
     [Header("Explosive Crystal")]
     [SerializeField] private bool canExplode;
 
@@ -32,10 +34,7 @@ public class Crystal_Skill : Skill
 
         if (currentCrystal == null)
         {
-            currentCrystal = Instantiate(crystalPrefab, player.transform.position, Quaternion.identity);
-            Crystal_Skill_Controller currentCrystalScript = currentCrystal.GetComponent<Crystal_Skill_Controller>();
-
-            currentCrystalScript.SetupCrystal(crystalDuration, canExplode, canMoveToEnemy, moveSpeed, FindClosestEnemy(currentCrystal.transform));
+            CreateCrystal();
         }
 
         else
@@ -49,9 +48,28 @@ public class Crystal_Skill : Skill
 
             currentCrystal.transform.position = playerPos;
 
-            currentCrystal.GetComponent<Crystal_Skill_Controller>()?.FinishCrystal();
+            if (cloneInsteadOfCrystal)
+            {
+                SkillManager.instance.clone.CreateClone(currentCrystal.transform, Vector3.zero);
+                Destroy(currentCrystal);
+            }
+            else
+            {
+                currentCrystal.GetComponent<Crystal_Skill_Controller>()?.FinishCrystal();
+            }
         }
     }
+
+    public void CreateCrystal()
+    {
+        currentCrystal = Instantiate(crystalPrefab, player.transform.position, Quaternion.identity);
+        Crystal_Skill_Controller currentCrystalScript = currentCrystal.GetComponent<Crystal_Skill_Controller>();
+
+        currentCrystalScript.SetupCrystal(crystalDuration, canExplode, canMoveToEnemy, moveSpeed, FindClosestEnemy(currentCrystal.transform));
+
+    }
+
+    public void CurrentCrystalChooseRandomTarget() => currentCrystal.GetComponent<Crystal_Skill_Controller>().ChooseRandomEnemy();
 
     private bool CanUseMultiCrystal()
     {
