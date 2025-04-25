@@ -8,7 +8,7 @@ public class Stat
 
     public List<int> modifiers;
 
-    public int Getvalue()
+    public int GetValue()
     {
         int finalValue = baseValue;
 
@@ -16,6 +16,11 @@ public class Stat
             finalValue += modifier;
 
         return finalValue;
+    }
+
+    public void SetDefaultValue(int _value)
+    {
+        baseValue = _value;
     }
 
     public void AddModifier(int _modifier)
