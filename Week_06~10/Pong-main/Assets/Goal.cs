@@ -1,7 +1,7 @@
 using Photon.Pun;
 using UnityEngine;
 
-public class Goal : MonoBehaviourPun
+public class Goal : MonoBehaviour
 {
     public bool isPlayer1Goal;
     private GameManager _gameManager;
@@ -13,7 +13,7 @@ public class Goal : MonoBehaviourPun
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.name.Equals("Ball"))
+        if(collision.CompareTag("Ball"))
         {
             if(isPlayer1Goal)
             {
