@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -43,6 +44,9 @@ public class CharacterStats : MonoBehaviour
     public int currentHealth; // 현재 체력
 
     public System.Action onHealthChanged;
+
+    public bool isDead { get; private set; }
+
     protected virtual void Start()
     {
         // 기본 치명타 피해량 설정 (150%)
@@ -79,6 +83,30 @@ public class CharacterStats : MonoBehaviour
 
             igniteDamageTimer = igniteDamageCooldown; // 쿨타임 초기화          
         }
+    }
+    public virtual void IncreaseStatBy(int _modifier, float _duration, Stat _statToModify)
+    {
+        // start corototuine for stat increase
+        StartCoroutine(StatModCoroutine(_modifier, _duration, _statToModify));
+    }
+
+    private IEnumerator StatModCoroutine(int _modifier, float _duration, Stat _statToModify)
+    {
+        _statToModify.AddModifier(_modifier);
+
+        yield return new WaitForSeconds(_duration);
+
+        _statToModify.RemoveModifier(_modifier);
+    }
+    public virtual void IncreaseHealthBy(int _amount)
+    {
+        currentHealth += _amount;
+
+        if (currentHealth > GetMaxHealthValue())
+            currentHealth = GetMaxHealthValue();
+
+        if (onHealthChanged != null)
+            onHealthChanged();
     }
 
     public virtual void DoDamage(CharacterStats _targetStats)

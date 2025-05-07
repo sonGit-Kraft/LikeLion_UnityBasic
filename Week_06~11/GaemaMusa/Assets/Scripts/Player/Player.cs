@@ -13,9 +13,17 @@ public class Player : Entity
     public float swordReturnImpact;
 
     [Header("Dash Info")]
+    [SerializeField] private float dashCooldown;
+    private float dashUsageTimer;
     public float dashSpeed;
     public float dashDuration;
     public float dashDir { get; private set; }
+
+    [Header("Auto Attack Info")]
+    public float attackDistance;
+    public float attackCooldown;
+    [HideInInspector] public float lasttimeAttacked;
+    [SerializeField] protected LayerMask whatIsEnemy;
 
     public SkillManager skill { get; private set; }
     public GameObject sword { get; private set; }
@@ -107,9 +115,29 @@ public class Player : Entity
     }
 
     public void AnimationTrigger() => stateMachine.currentState.AnimationFinishTrigger();
+    public virtual RaycastHit2D IsEnemyDetected() => Physics2D.Raycast(wallCheck.position,
+     Vector2.right * facingDir, 50, whatIsEnemy);
 
-    private void CheckForDashInput()
+    public virtual RaycastHit2D IsEnemyDetectedLeft() => Physics2D.Raycast(wallCheck.position,
+        Vector2.right * -facingDir, 50, whatIsEnemy);
+
+
+    public void CheckForDashInput()
     {
+        dashUsageTimer -= Time.deltaTime;
+
+        if (dashUsageTimer < 0)
+        {
+            dashUsageTimer = dashCooldown;
+
+            //dashDir = Input.GetAxisRaw("Horizontal");
+
+            if (dashDir == 0)
+                dashDir = facingDir;
+
+            stateMachine.ChangeState(dashState);
+        }
+
         if (IsWallDetected())
             return;
 
